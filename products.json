@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Gray Hoodie",
+        "price": 100,
+        "image": "images/hoodie1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Premium Black Hoodie",
+        "price": 188,
+        "image": "images/hoodie2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Comfy Red Hoodie",
+        "price": 88,
+        "image": "images/hoodie 3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cozy Blue Hoodie",
+        "price": 80,
+        "image": "images/hoodie 4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Sporty Green Hoodie",
+        "price": 55,
+        "image": "images/hoodie 5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Casual White Shirt",
+        "price": 49,
+        "image": "images/shirt.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Formal Black Shirt",
+        "price": 110,
+        "image": "images/shirt2.jpg"
+    }
+]

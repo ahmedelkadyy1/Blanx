@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanx</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="images/Blanx.png">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="">
+
+    <!--spin the wheel-->
+    <!-- <div class="wheelTab">
+        <div class="pointer"></div>
+            <div class="wheel-container">
+        <div class="wheel" id="wheel"></div>
+      </div>
+      <div class="button-container">
+        <button onclick="spinWheel()" class="spinbtn">Spin the Wheel</button>
+      </div>
+    </div> -->
+
+
+    <div class="checkOutcontainer">
+            <div class="card">
+                <i class='bx bx-x closecheckdiv'></i>
+                <div class="leftside">
+                  <img
+                    src="images/Blanx (1).png"
+                    class="product"
+                    alt="BLANX"
+                  />
+                </div>
+                <div class="rightside">
+                  <form action="">
+                    <h1>CheckOut</h1>
+                    <h2>Payment Information</h2>
+                    <p>Cardholder Name</p>
+                    <input type="text" class="inputbox" name="name" required />
+                    <p>Card Number</p>
+                    <input type="number" class="inputbox" name="card_number" id="card_number" required />
+        
+                    <p>Card Type</p>
+                    <select class="inputbox" name="card_type" id="card_type" required>
+                      <option value="">--Select a Card Type--</option>
+                      <option value="Visa">Visa</option>
+                      <option value="RuPay">RuPay</option>
+                      <option value="MasterCard">MasterCard</option>
+                    </select>
+        <div class="expcvv">
+        
+                    <p class="expcvv_text">Expiry</p>
+                    <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+        
+                    <p class="expcvv_text2">CVV</p>
+                    <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                </div>
+                    <h3 class="totalPrice">$Total</h3>
+                    <button type="button" class="button">CheckOut</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+    
+
+    <!--cart1-->
+
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                <div class="item">
+                </div>
+            </div>
+            <div class="btn1">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">CHECK OUT</button>
+            </div>
+        </div>
+
+    <!--header-->
+<header>
+    <a href="#" class="logo">Blanx</a>
+
+    <ul class="navlist">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#featured">Featured</a></li>
+     <li><a href="#new">New</a></li>
+     <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="header-icons">
+        <div class="icon-cart" id="cart-icon">
+            <i class="bx bx-shopping-bag" id="cart-icon"></i>
+            <span class="quantspan">0</span>
+        </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header>
+
+<!--home-->
+<section class="home" id="home">
+    <div class="home-text">
+        <h1>Men's New <br><span>Arrivals</span></h1>
+        <p>New colors, now also available in men's sizing</p>
+        <a href="collection.html" class="btn">View Collection</a>
+    </div>
+</section>
+
+<!--Feautured-->
+<section class="featured" id="featured">
+    <div class="center-text">
+        <h2>Featured Categories</h2>
+    </div>
+
+    <div class="featured-content">
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea1.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea2.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea3.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea4.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea5.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="row" onclick="directcollection()">
+            <img src="images/fea6.png">
+            <div class="fea-text">
+                <h5>Mens</h5>
+                <p>10 items</p>
+            </div>
+            <div class="arrow">
+                <a href="collection.html"><i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--cta-->
+<section class="cta">
+    <div class="cta-text">
+        <h6>SUMMER ON SALE</h6>
+        <h4>20% OFF <br> NEW ARRIVAL</h4>
+        <a href="collection.html" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!--New-->
+<section class="new" id="new">
+    <div class="center-text">
+        <h2>New Arrivals</h2>
+    </div>
+
+    <div class="listProduct">
+        <!-- <div class="box">
+            <img src="images/hoodie1.jpg" alt="Classic Gray Hoodie">
+            <h5>Classic Gray Hoodie</h5>
+            <h6>$100</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/hoodie2.jpg" alt="Premium Black Hoodie">
+            <h5>Premium Black Hoodie</h5>
+            <h6>$188</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/hoodie 3.jpg" alt="Comfy Red Hoodie">
+            <h5>Comfy Red Hoodie</h5>
+            <h6>$88</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/hoodie 4.jpg" alt="Cozy Blue Hoodie">
+            <h5>Cozy Blue Hoodie</h5>
+            <h6>$80</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/hoodie 5.jpg" alt="Sporty Green Hoodie">
+            <h5>Sporty Green Hoodie</h5>
+            <h6>$55</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shirt.jpg" alt="Casual White Shirt">
+            <h5>Casual White Shirt</h5>
+            <h6>$49</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/shirt2.jpg" alt="Formal Black Shirt">
+            <h5>Formal Black Shirt</h5>
+            <h6>$110</h6>
+            <div class="sale">
+                <button class="add-cart">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                </button>
+            </div>
+        </div> -->
+    </div>    
+</section>
+
+<!--brand-->
+
+<!-- <section class="brand">
+    <div class="brand-content">
+        <div class="main">
+            <img src="images/adidas.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/nike.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/lacoste.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/prada.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/zara.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/gucci.jpg">
+        </div>
+
+        <div class="main">
+            <img src="images/channel.jpg">
+        </div>
+    </div>
+</section> -->
+
+<!--contact-->
+
+<section class="contact" id="contact">
+    <div class="main-contact">
+        <h3>Blanx</h3>
+        <h5>Let's Connect With Us</h5>
+        <div class="icons">
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <div class="main-contact">
+            <h3>Explore</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </div>
+    </div>
+
+    <div class="main-contact">
+        <h3>Our Services</h3>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Free Shipping</a></li>
+        <li><a href="#">Gift Cards</a></li>
+    </div>
+
+    <div class="main-contact">
+        <h3>Shopping</h3>
+        <li><a href="#">Clothing Store</a></li>
+        <li><a href="#">Trending Shoes</a></li>
+        <li><a href="#">Accesories</a></li>
+        <li><a href="#">Sale</a></li>
+    </div>
+</section>
+
+<div class="last-text">
+    <p>Copyright © 2024 All Rights Reserved | This Template is Made By Ahmed Megahed</p>
+</div>
+
+<!--scroll top-->
+
+<a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+</div>
+</body>
+    <script src="script.js">
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9707469295216404"
+    crossorigin="anonymous"></script>
+</html>
